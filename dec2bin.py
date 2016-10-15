@@ -7,21 +7,21 @@ Video:
 # cifre brojcanog sistema
 DIGITS = "01"
 
-def getNumber(num):
+def getNumber(dec):
     global DIGITS
-    word = ""
-    code = []
+    bin_ = ""
+    rest = []
 
     while True:
-        temp = (num % len(DIGITS))
-        num = int(num/len(DIGITS))
-        code.append(temp)
-        if num == 0:
+        temp = (dec % len(DIGITS))
+        dec = int(dec/len(DIGITS))
+        rest.append(temp)
+        if dec == 0:
             break
 
-    for k in code[::-1]:
-        word += DIGITS[k]
-    return word
+    for k in rest[::-1]:
+        bin_ += DIGITS[k]
+    return bin_
 
 print("Brojevi binarnog brojcanog sistema od 0 do 20: ")
 for i in range(20):
