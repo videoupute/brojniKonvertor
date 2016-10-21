@@ -1,7 +1,7 @@
 """
 Author: VideoUpute
 URL:    https://www.youtube.com/channel/UC_0_Jm2Bn-0-ULn_By_1Odw
-Video:
+Video:  https://www.youtube.com/watch?v=RRa14NcIMaY
 """
 
 # cifre brojcanog sistema
@@ -24,7 +24,7 @@ def getNumber(dec):
     return bin_
 
 print("Brojevi binarnog brojcanog sistema od 0 do 20: ")
-for i in range(20):
+for i in range(21):
     print (getNumber(i))
 
 print ("Broj 85 decimalno je",getNumber(85), "binarno!")
